@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H12Oef3Medewerkers"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="450">
     <Grid>
-
+        <StackPanel>
+            <WrapPanel Margin="10" HorizontalAlignment="Center">
+                <Label Content="Salaris" Margin="10"/>
+                <TextBox x:Name="salaryTextBox" Width="150" Margin="10"/>
+                <Button x:Name="updateSalaryButton" Width="100" Margin="10" Content="Update"/>
+            </WrapPanel>
+            <ListBox Margin="10" HorizontalAlignment="Center" Width="250" Height="300"/>
+            <Label x:Name="errorLabel" Width="150" Height="25" HorizontalAlignment="Left" Margin="10"/>
+        </StackPanel>
     </Grid>
 </Window>
