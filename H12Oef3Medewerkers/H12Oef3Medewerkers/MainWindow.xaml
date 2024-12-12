@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:H12Oef3Medewerkers"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="450">
+        Title="MainWindow" Height="450" Width="450" Loaded="Window_Loaded">
     <Grid>
         <StackPanel>
             <WrapPanel Margin="10" HorizontalAlignment="Center">
                 <Label Content="Salaris" Margin="10"/>
                 <TextBox x:Name="salaryTextBox" Width="150" Margin="10"/>
-                <Button x:Name="updateSalaryButton" Width="100" Margin="10" Content="Update"/>
+                <Button x:Name="updateSalaryButton" Width="100" Margin="10" Content="Update" Click="updateSalaryButton_Click"/>
             </WrapPanel>
-            <ListBox Margin="10" HorizontalAlignment="Center" Width="250" Height="300"/>
-            <Label x:Name="errorLabel" Width="150" Height="25" HorizontalAlignment="Left" Margin="10"/>
+            <ListBox x:Name="summaryListBox" Margin="10" HorizontalAlignment="Center" Width="250" Height="300" SelectionChanged="ListBox_SelectionChanged"/>
+            <Label x:Name="errorLabel" Width="250" Height="30" HorizontalAlignment="Left" Margin="10"/>
         </StackPanel>
     </Grid>
 </Window>
